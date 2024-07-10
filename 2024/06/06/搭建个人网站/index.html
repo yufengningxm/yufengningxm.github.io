@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>柠不知的博客</title>
+	<meta charset="utf-8">
+
+	<!-- 引入配置文件 -->
+	
+<link rel="stylesheet" href="/css/main.css">
+
+
+	<!-- 字体图片库 -->
+	
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+	<!-- 代码高亮库 -->
+	
+<link rel="stylesheet" href="/lib/highlight/styles/atom-one-dark.css">
+
+	
+<meta name="generator" content="Hexo 7.2.0"></head>
+<body>
+
+	<div id="main">
+		<!-- 引入侧边栏 -->
+		<aside>
+			<!-- 搜索栏 -->
+<div id="search">
+	<input class="search-input" type="text" placeholder="search">
+	<i id="search-icon" class="fa fa-bars" title="切换目录与索引">
+</div>
+
+<!-- 侧边目录栏 -->
+<div id="tree">
+	
+
+	
+					<ul>
+						<li class="file">
+							<a href="/2024/06/25/hello-world/">
+								<i class="fa fa-file"></i>
+								hello-world
+							</a>
+						</li>
+					</ul>
+	
+					<ul>
+						<li class="file active">
+							<a href="/2024/06/06/搭建个人网站/">
+								<i class="fa fa-file"></i>
+								搭建个人网站
+							</a>
+						</li>
+					</ul>
+	
+</div>
+
+
+<!-- 最尾部添加，这里就不列以前的代码了 -->
+<div id="toc" style="display: none;"></div>
+
+		</aside>
+
+		<!-- 引入导航 -->
+		<nav>
+			<ul id="menu">
+	
+	
+    <li class="menu-item">
+        <a href="/" class="menu-item-link">主页</a>
+    </li>
+    
+    <li class="menu-item">
+        <a href="/about" class="menu-item-link">关于</a>
+    </li>
+    
+
+    
+    
+
+</ul>
+
+		</nav>
+
+		<!-- 引入正文 -->
+		<div id="content">
+			<div>
+	<span id="post-author">柠不知</span>
+	<span id="post-date">2024-06-06 17:47:57</span>
+</div>
+
+<div id="article">
+	<h1 id="配置博客的环境"><a href="#配置博客的环境" class="headerlink" title="配置博客的环境"></a>配置博客的环境</h1><h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>Node.js是JavaScript语言运行环境，用于开发服务器端和网络应用程序。<br>npm (node package manager)是 JavaScript 世界的包管理工具,并且是 Node.js 平台的默认包管理工具。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>官网下载：nodejs.org<br>方法1: 复制代码到终端<br><img src="https://p.ipic.vip/039x2p.png" alt=" Download Node.js"><br>方法2: 直接下载安装包，一直点下一步<br><img src="https://p.ipic.vip/mymmlk.png" alt=" Download Node.js"></p>
+<p>1.选择对应的版本号。其中，Current是最新开发版本，包含最新的功能、改进和实验性特性，但不太稳定。而LTS版（Long-Term Support，长期支持版）提供稳定且可靠的版本，适合生产环境中的应用程序，建议选择LTS版。<br>2.选择自己的电脑系统（Windows、macOS、Linux）<br>安装成功后查看node和npm版本</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>Hexo是基于Node.js的静态博客框架Hexo。</p>
+<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>终端切换到超级用户模式<br>sudo su<br>(输入密码)</p>
+<h2 id="创建博客目录并初始化"><a href="#创建博客目录并初始化" class="headerlink" title="创建博客目录并初始化"></a>创建博客目录并初始化</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>blog文件夹下生成<br><img src="https://p.ipic.vip/1nsoju.png" alt="blog文件夹"><br>终端显示<br>sh-3.2# npm install hexo-cli -g<br>changed 53 packages in 7s<br>14 packages are looking for funding<br>  run <code>npm fund</code> for details<br>sh-3.2# hexo init blog<br>INFO  Cloning hexo-starter <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-starter.git">https://github.com/hexojs/hexo-starter.git</a><br>INFO  Install dependencies<br>INFO  Start blogging with Hexo!<br>sh-3.2# cd blog<br>sh-3.2# npm install<br>hexo server</p>
+<p>added 2 packages, and audited 228 packages in 724ms</p>
+<p>23 packages are looking for funding<br>  run <code>npm fund</code> for details</p>
+<p>found 0 vulnerabilities<br>sh-3.2# hexo server<br>INFO  Validating config<br>INFO  Start processing<br>INFO  Hexo is running at <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> . Press Ctrl+C to stop.</p>
+<p>在网页输入<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 进入到博客初始页面<br><img src="https://p.ipic.vip/w7y1oz.png" alt="hexo初始页"><br>control+c退出界面</p>
+<p>到这里，算成功创建了个人网站，接下来是网站部署到GitHub，以及打造专属域名的教程。</p>
+<h1 id="GitHub部署"><a href="#GitHub部署" class="headerlink" title="GitHub部署"></a>GitHub部署</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g #生成静态文件</span><br><span class="line">hexo s本地预览</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="配置SSH-keys，部署到GitHub-Pages"><a href="#配置SSH-keys，部署到GitHub-Pages" class="headerlink" title="配置SSH keys，部署到GitHub Pages"></a>配置SSH keys，部署到GitHub Pages</h2><p>设置_config.yml中的deploy选项</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;your-github-repo&gt;</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
+<p>安装部署插件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>部署到GitHub Pages<br>hexo deploy</p>
+<h1 id="主题更换"><a href="#主题更换" class="headerlink" title="主题更换"></a>主题更换</h1><p>下载主题到themes文件夹：<br>git clone <theme-repo> themes&#x2F;<theme-name><br>修改_config.yml中的theme值为新主题名。<br>发表文章：<br>hexo new “My New Post”<br>编辑器会自动打开，您可以根据提示填写相关信息。<br>更新文章并重新生成和部署：<br>hexo generate<br>hexo deploy</p>
+<h1 id="一些报错"><a href="#一些报错" class="headerlink" title="一些报错"></a>一些报错</h1><h2 id="端口占用"><a href="#端口占用" class="headerlink" title="端口占用"></a>端口占用</h2><p>sh-3.2# hexo s<br>INFO  Validating config<br>FATAL Port 4000 has been used. Try other port instead.<br>FATAL Something’s wrong. Maybe you can find the solution here: <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a><br>解决办法<br>1.结束端口占用进程<br>netstat -aon|findstr 4000<br>2.更改hexo s运行的端口号。在_config.yml内添加下列代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">  port: 8888</span><br><span class="line">  compress: true</span><br><span class="line">  header: true</span><br></pre></td></tr></table></figure>
+<p>3.Hexo运行时换个端口</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s -p 5000</span><br></pre></td></tr></table></figure>
+<p>每次运行都要换，有点麻烦<br>根据这篇文章：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_62882080/article/details/129797273">https://blog.csdn.net/weixin_62882080/article/details/129797273</a></p>
+
+</div>
+
+		</div>
+		
+	</div>
+
+	<!-- 引入代码高亮的 js -->
+	
+<script src="/lib/highlight/highlight.pack.js"></script>
+
+
+	<!-- 引入 jquery -->
+	
+<script src="/lib/jquery-3.4.1.min.js"></script>
+
+
+	<!-- 引入 pjax -->
+	
+<script src="/lib/jquery.pjax.js"></script>
+
+	
+	<!-- 引入 js 文件 -->
+	
+<script src="/js/main.js"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js"></script>
+	<script type="text/javascript">
+	L2Dwidget.init();
+	</script>
+
+</body>
+</html>
