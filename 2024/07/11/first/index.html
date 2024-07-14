@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>first柠不知的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">  
+<meta name="generator" content="Hexo 7.2.0"></head> 
+
+<body>
+    <!-- 导航栏 -->
+    <nav>
+  <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/archives">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+    <div id="main" class="container-fluid d-flex flex-column min-vh-100">
+        <div class="row flex-grow-1">
+            <!-- 侧边栏 -->
+            <aside class="col-md-2 bg-light">
+                <!-- 侧边栏内容 -->
+<div class="sidebar">
+  
+  <!-- 头像 -->
+  <div class="sidebar-avatar">
+    <img :src="avatar" class="user-avatar">
+  </div>
+
+    <!-- 作者信息 -->
+    <div class="author-info">
+      <h3></h3>
+      <p></p>
+  </div>
+
+  <!-- 介绍 -->
+  <div class="sidebar-intro text-center mt-3">
+    <p>技术宅进度******</p>
+  </div>
+
+  <!-- 导航 -->
+  <nav class="sidebar-nav mt-4">
+    <h3>导航</h3>
+    <ul>
+      
+        <li><a href="/">首页</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/categories">分类</a></li>
+      
+        <li><a href="/tags">标签</a></li>
+      
+    </ul>
+  </nav>
+
+  <!-- 分类 -->
+  <div class="sidebar-categories mt-4">
+    <h3>分类</h3>
+    <ul>
+      
+    </ul>
+  </div>
+</aside>
+
+            </aside>
+
+            <!-- 引入正文 -->
+            <div id="content" class="col-md-10">
+                <!-- 博客详情 -->
+<h2>first</h2>
+<p>2024/07/11 22:07:19 </p>
+<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote> 
+
+<div class="p-2 pe-4">
+  
+
+     
+        <a href="/2024/07/14/postlitter/" class="btn btn-outline-secondary btn-sm float-start">
+            <small>
+                < 上一篇：postlitter
+            </small>
+        </a>
+     
+
+
+     
+        <a href="/2024/06/25/hello-world/" class="btn btn-outline-secondary btn-sm float-end" >
+            <small>
+                 下一篇：Hello World >
+            </small>
+        </a>
+     
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="mt-auto bg-light py-3">
+        <footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 我的网站</p>
+        <p>
+            访问量: <span id="busuanzi_value_site_pv"></span> 次
+            访客数: <span id="busuanzi_value_site_uv"></span> 人次
+        </p>
+        <p id="uptime">网站运行时间：正在计算...</p>
+    </div>
+</footer>
+
+<!-- 引入不蒜子计数器 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- JavaScript 脚本计算网站运行时间 -->
+<script>
+    // 计算网站运行时间函数
+    function calculateUptime() {
+        var startTime = new Date("2024-06-01"); // 替换成你的网站创建时间
+        var currentTime = new Date();
+        
+        var uptime = currentTime.getTime() - startTime.getTime();
+        var years = Math.floor(uptime / (1000 * 60 * 60 * 24 * 365.25));
+        var months = Math.floor((uptime % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24 * 30.44)); // 平均每月天数
+        var days = Math.floor((uptime % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24));
+
+        document.getElementById("uptime").textContent = "网站运行时间：" + days + " 天";
+    }
+
+    // 页面加载完成后计算并显示运行时间
+    document.addEventListener("DOMContentLoaded", function() {
+        calculateUptime();
+    });
+</script>
+
+<link rel="stylesheet" href="themes/ning/source/css/style.css"> 
+    </footer>
+
+<script id="__bs_script__">//<![CDATA[
+    (function() {
+    try {
+        var script = document.createElement('script');
+        if ('async') {
+        script.async = true;
+        }
+        script.src = 'http://HOST:3000/browser-sync/browser-sync-client.js?v=2.29.3'.replace("HOST", location.hostname);
+        if (document.body) {
+        document.body.appendChild(script);
+        } else if (document.head) {
+        document.head.appendChild(script);
+        }
+    } catch (e) {
+        console.error("Browsersync: could not append script tag", e);
+    }
+    })()
+//]]></script>
+
+</body>
+</html>
