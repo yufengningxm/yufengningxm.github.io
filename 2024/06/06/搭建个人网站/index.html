@@ -3,36 +3,26 @@
 
 <head>
     <meta charset="utf-8">
-    <title>搭建个人网站柠不知的博客</title>
+    <title>搭建个人网站 柠不知的博客</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/style.css">  
+    <link rel="shortcut icon" href="/image/avatar.png" type="image/x-icon">
+    <link rel="icon" href="/image/avatar.png" type="image/png">
+    <link rel="stylesheet" href="/css/style.css">
 <meta name="generator" content="Hexo 7.2.0"></head> 
 
 <body>
-    <!-- 导航栏 -->
-    <nav>
-  <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/archives">Blog</a></li>
-      <li><a href="/contact">Contact</a></li>
-  </ul>
-</nav>
-
-
     <div id="main" class="container-fluid d-flex flex-column min-vh-100">
         <div class="row flex-grow-1">
             <!-- 侧边栏 -->
             <aside class="col-md-2 bg-light">
                 <!-- 侧边栏内容 -->
 <div class="sidebar">
-  
   <!-- 头像 -->
   <div class="sidebar-avatar">
-    <img :src="avatar" class="user-avatar">
+    <img src="/image/avatar.png" alt="Avatar">
   </div>
 
     <!-- 作者信息 -->
@@ -80,42 +70,30 @@
                 <!-- 博客详情 -->
 <h2>搭建个人网站</h2>
 <p>2024/06/06 17:47:57 </p>
-<h1 id="配置博客的环境"><a href="#配置博客的环境" class="headerlink" title="配置博客的环境"></a>配置博客的环境</h1><h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>Node.js是JavaScript语言运行环境，用于开发服务器端和网络应用程序。<br>npm (node package manager)是 JavaScript 世界的包管理工具,并且是 Node.js 平台的默认包管理工具。</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>官网下载：nodejs.org<br>方法1: 复制代码到终端<br><img src="https://p.ipic.vip/039x2p.png" alt=" Download Node.js"><br>方法2: 直接下载安装包，一直点下一步<br><img src="https://p.ipic.vip/mymmlk.png" alt=" Download Node.js"></p>
-<p>1.选择对应的版本号。其中，Current是最新开发版本，包含最新的功能、改进和实验性特性，但不太稳定。而LTS版（Long-Term Support，长期支持版）提供稳定且可靠的版本，适合生产环境中的应用程序，建议选择LTS版。<br>2.选择自己的电脑系统（Windows、macOS、Linux）<br>安装成功后查看node和npm版本</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>Hexo是基于Node.js的静态博客框架Hexo。</p>
-<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>终端切换到超级用户模式<br>sudo su<br>(输入密码)</p>
-<h2 id="创建博客目录并初始化"><a href="#创建博客目录并初始化" class="headerlink" title="创建博客目录并初始化"></a>创建博客目录并初始化</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>blog文件夹下生成<br><img src="https://p.ipic.vip/1nsoju.png" alt="blog文件夹"><br>终端显示<br>sh-3.2# npm install hexo-cli -g<br>changed 53 packages in 7s<br>14 packages are looking for funding<br>  run <code>npm fund</code> for details<br>sh-3.2# hexo init blog<br>INFO  Cloning hexo-starter <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-starter.git">https://github.com/hexojs/hexo-starter.git</a><br>INFO  Install dependencies<br>INFO  Start blogging with Hexo!<br>sh-3.2# cd blog<br>sh-3.2# npm install<br>hexo server</p>
-<p>added 2 packages, and audited 228 packages in 724ms</p>
-<p>23 packages are looking for funding<br>  run <code>npm fund</code> for details</p>
-<p>found 0 vulnerabilities<br>sh-3.2# hexo server<br>INFO  Validating config<br>INFO  Start processing<br>INFO  Hexo is running at <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> . Press Ctrl+C to stop.</p>
-<p>在网页输入<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 进入到博客初始页面<br><img src="https://p.ipic.vip/w7y1oz.png" alt="hexo初始页"><br>control+c退出界面</p>
-<p>到这里，算成功创建了个人网站，接下来是网站部署到GitHub，以及打造专属域名的教程。</p>
-<h1 id="GitHub部署"><a href="#GitHub部署" class="headerlink" title="GitHub部署"></a>GitHub部署</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g #生成静态文件</span><br><span class="line">hexo s本地预览</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="配置SSH-keys，部署到GitHub-Pages"><a href="#配置SSH-keys，部署到GitHub-Pages" class="headerlink" title="配置SSH keys，部署到GitHub Pages"></a>配置SSH keys，部署到GitHub Pages</h2><p>设置_config.yml中的deploy选项</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;your-github-repo&gt;</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
-<p>安装部署插件</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>部署到GitHub Pages<br>hexo deploy</p>
-<h1 id="主题更换"><a href="#主题更换" class="headerlink" title="主题更换"></a>主题更换</h1><p>下载主题到themes文件夹：<br>git clone <theme-repo> themes&#x2F;<theme-name><br>修改_config.yml中的theme值为新主题名。<br>发表文章：<br>hexo new “My New Post”<br>编辑器会自动打开，您可以根据提示填写相关信息。<br>更新文章并重新生成和部署：<br>hexo generate<br>hexo deploy</p>
-<h1 id="一些报错"><a href="#一些报错" class="headerlink" title="一些报错"></a>一些报错</h1><h2 id="端口占用"><a href="#端口占用" class="headerlink" title="端口占用"></a>端口占用</h2><p>sh-3.2# hexo s<br>INFO  Validating config<br>FATAL Port 4000 has been used. Try other port instead.<br>FATAL Something’s wrong. Maybe you can find the solution here: <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a><br>解决办法<br>1.结束端口占用进程<br>netstat -aon|findstr 4000<br>2.更改hexo s运行的端口号。在_config.yml内添加下列代码</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">server:</span><br><span class="line">  port: 8888</span><br><span class="line">  compress: true</span><br><span class="line">  header: true</span><br></pre></td></tr></table></figure>
-<p>3.Hexo运行时换个端口</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s -p 5000</span><br></pre></td></tr></table></figure>
-<p>每次运行都要换，有点麻烦<br>根据这篇文章：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_62882080/article/details/129797273">https://blog.csdn.net/weixin_62882080/article/details/129797273</a></p>
+<h1 id="配置博客的环境"><a href="#配置博客的环境" class="headerlink" title="配置博客的环境"></a>配置博客的环境</h1><p>确保缩进和语法正确。完整示例如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#123;% macCodeBlock %&#125;</span><br><span class="line">\<span class="code">`\`</span>\`javascript</span><br><span class="line">// 这是一个示例代码</span><br><span class="line">function helloWorld() &#123;</span><br><span class="line"><span class="code">    console.log(&quot;Hello, world!&quot;);</span></span><br><span class="line"><span class="code">&#125;</span></span><br><span class="line"><span class="code">\`\`\`</span></span><br><span class="line"><span class="code">&#123;% endmacCodeBlock %&#125;</span></span><br><span class="line"><span class="code"></span></span><br><span class="line"></span><br><span class="line"><span class="section">## Node.js</span></span><br><span class="line">Node.js是JavaScript语言运行环境，用于开发服务器端和网络应用程序。</span><br><span class="line">npm (node package manager)是 JavaScript 世界的包管理工具,并且是 Node.js 平台的默认包管理工具。</span><br><span class="line"><span class="section">### 安装</span></span><br><span class="line">官网下载：nodejs.org</span><br><span class="line">方法1: 复制代码到终端</span><br><span class="line">![<span class="string"> Download Node.js</span>](<span class="link">https://p.ipic.vip/039x2p.png </span>)</span><br><span class="line">方法2: 直接下载安装包，一直点下一步</span><br><span class="line">![<span class="string"> Download Node.js</span>](<span class="link">https://p.ipic.vip/mymmlk.png</span>)</span><br><span class="line"></span><br><span class="line">1.选择对应的版本号。其中，Current是最新开发版本，包含最新的功能、改进和实验性特性，但不太稳定。而LTS版（Long-Term Support，长期支持版）提供稳定且可靠的版本，适合生产环境中的应用程序，建议选择LTS版。</span><br><span class="line">2.选择自己的电脑系统（Windows、macOS、Linux）</span><br><span class="line">安装成功后查看node和npm版本</span><br></pre></td></tr></table></figure>
+<p>node -v<br>npm -v</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">## Hexo</span><br><span class="line">Hexo是基于Node.js的静态博客框架Hexo。</span><br><span class="line">### 安装</span><br><span class="line">终端切换到超级用户模式</span><br><span class="line">sudo su</span><br><span class="line">(输入密码)</span><br><span class="line">## 创建博客目录并初始化</span><br></pre></td></tr></table></figure>
+<p>npm install hexo-cli -g<br>hexo init blog<br>cd blog<br>npm install<br>hexo server</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">blog文件夹下生成</span><br><span class="line">![blog文件夹](https://p.ipic.vip/1nsoju.png)</span><br><span class="line">终端显示</span><br><span class="line">sh-3.2# npm install hexo-cli -g</span><br><span class="line">changed 53 packages in 7s</span><br><span class="line">14 packages are looking for funding</span><br><span class="line">  run `npm fund` for details</span><br><span class="line">sh-3.2# hexo init blog</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">INFO  Start blogging with Hexo!</span><br><span class="line">sh-3.2# cd blog</span><br><span class="line">sh-3.2# npm install</span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line">added 2 packages, and audited 228 packages in 724ms</span><br><span class="line"></span><br><span class="line">23 packages are looking for funding</span><br><span class="line">  run `npm fund` for details</span><br><span class="line"></span><br><span class="line">found 0 vulnerabilities</span><br><span class="line">sh-3.2# hexo server</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.</span><br><span class="line"></span><br><span class="line">在网页输入http://localhost:4000/ 进入到博客初始页面</span><br><span class="line">![hexo初始页](https://p.ipic.vip/w7y1oz.png)</span><br><span class="line">control+c退出界面</span><br><span class="line"></span><br><span class="line">到这里，算成功创建了个人网站，接下来是网站部署到GitHub，以及打造专属域名的教程。</span><br><span class="line"></span><br><span class="line"># GitHub部署</span><br></pre></td></tr></table></figure>
+<p>hexo g #生成静态文件<br>hexo s本地预览</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">## 配置SSH keys，部署到GitHub Pages</span><br><span class="line">设置_config.yml中的deploy选项</span><br></pre></td></tr></table></figure>
+<p>deploy:<br>  type: git<br>  repo: <your-github-repo><br>  branch: gh-pages</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">安装部署插件</span><br></pre></td></tr></table></figure>
+<p>npm install hexo-deployer-git –save</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">部署到GitHub Pages</span><br><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line"># 主题更换</span><br><span class="line">下载主题到themes文件夹：</span><br><span class="line">git clone &lt;theme-repo&gt; themes/&lt;theme-name&gt;</span><br><span class="line">修改_config.yml中的theme值为新主题名。</span><br><span class="line">发表文章：</span><br><span class="line">hexo new &quot;My New Post&quot;</span><br><span class="line">编辑器会自动打开，您可以根据提示填写相关信息。</span><br><span class="line">更新文章并重新生成和部署：</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line"># 一些报错</span><br><span class="line">## 端口占用</span><br><span class="line">sh-3.2# hexo s</span><br><span class="line">INFO  Validating config</span><br><span class="line">FATAL Port 4000 has been used. Try other port instead.</span><br><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html</span><br><span class="line">解决办法</span><br><span class="line">1.结束端口占用进程</span><br><span class="line">netstat -aon|findstr 4000</span><br><span class="line">2.更改hexo s运行的端口号。在_config.yml内添加下列代码</span><br></pre></td></tr></table></figure>
+<p>server:<br>  port: 8888<br>  compress: true<br>  header: true</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3.Hexo运行时换个端口</span><br></pre></td></tr></table></figure>
+<p>hexo s -p 5000</p>
+<pre><code>每次运行都要换，有点麻烦
+根据这篇文章：https://blog.csdn.net/weixin_62882080/article/details/129797273
+
+</code></pre>
  
 
 <div class="p-2 pe-4">
   
 
-     
-        <a href="/2024/06/25/hello-world/" class="btn btn-outline-secondary btn-sm float-start">
-            <small>
-                < 上一篇：Hello World
-            </small>
-        </a>
      
 
 
@@ -147,13 +125,9 @@
     // 计算网站运行时间函数
     function calculateUptime() {
         var startTime = new Date("2024-06-01"); // 替换成你的网站创建时间
-        var currentTime = new Date();
-        
+        var currentTime = new Date();       
         var uptime = currentTime.getTime() - startTime.getTime();
-        var years = Math.floor(uptime / (1000 * 60 * 60 * 24 * 365.25));
-        var months = Math.floor((uptime % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24 * 30.44)); // 平均每月天数
         var days = Math.floor((uptime % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24));
-
         document.getElementById("uptime").textContent = "网站运行时间：" + days + " 天";
     }
 
