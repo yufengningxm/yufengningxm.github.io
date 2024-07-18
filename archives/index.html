@@ -98,8 +98,8 @@
                             <text class="text-secondary">
                                 2024/06/06 17:47
                             </text> 
-                            <a href="/2024/06/06/test/" class="link-dark text-decoration-none p-2">
-                                搭建个人网站
+                            <a href="/2024/06/06/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" class="link-dark text-decoration-none p-2">
+                                555
                             </a>
                         </div>
                     </li>
@@ -109,8 +109,8 @@
                             <text class="text-secondary">
                                 2024/06/06 17:47
                             </text> 
-                            <a href="/2024/06/06/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" class="link-dark text-decoration-none p-2">
-                                555
+                            <a href="/2024/06/06/test/" class="link-dark text-decoration-none p-2">
+                                搭建个人网站
                             </a>
                         </div>
                     </li>
@@ -158,13 +158,19 @@
     <footer class="mt-auto bg-light py-3">
         <footer class="footer">
     <div class="container">
-        <p>&copy; 2024 柠不知</p>
+        <p>&copy; 2024 柠不知 <i class="bi bi-balloon-heart"></i></p>
         <p>
-            共计 <span id="busuanzi_value_site_uv"></span> 位小伙伴，
-            访问 <span id="busuanzi_value_site_pv"></span> 次
+            <i class="bi bi-graph-up"></i> 1530 字｜
+            <i class="bi bi-clock-history"></i> <span id="uptime">网站运行时间：正在计算...</span>｜
+            <i class="bi bi-people"></i> <span id="busuanzi_value_site_uv"></span> 人｜ <i class="bi bi-search-heart"></i> <span id="busuanzi_value_site_pv"></span> 次
         </p>
-        <p id="uptime">网站运行时间：正在计算...</p>
-        <p><i class="bi bi-graph-up"></i> 1530 字</p>
+        <p>
+            <a target="_blank" rel="noopener" href="https://space.bilibili.com/13511395" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-bilibili"></i></a>｜
+            <a target="_blank" rel="noopener" href="https://www.xiaohongshu.com/user/profile/605363560000000001008a6c" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-book"></i></a>｜
+            <a target="_blank" rel="noopener" href="https://www.douyin.com/user/MS4wLjABAAAAbBlZsgwy10ENa2UzGHzrxPFRd3n0fqpyafcbFFZQqHysBz4S2qjX2p71ce1xgpN5" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-tiktok"></i></a>｜
+            <a target="_blank" rel="noopener" href="https://weibo.com/5248317170" style="color: inherit; text-decoration: none;"><i class="bi bi-sina-weibo"></i></a>｜
+            <a target="_blank" rel="noopener" href="https://github.com/yufengningxm" style="color: inherit; text-decoration: none;"><i class="bi bi-github"></i></a>｜
+        </p>       
     </div>
 </footer>
 
@@ -179,7 +185,7 @@
         var currentTime = new Date();       
         var uptime = currentTime.getTime() - startTime.getTime();
         var days = Math.floor((uptime % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24));
-        document.getElementById("uptime").textContent = "网站运行时间：" + days + " 天";
+        document.getElementById("uptime").textContent = "" + days + "天";
     }
     // 页面加载完成后计算并显示运行时间
     document.addEventListener("DOMContentLoaded", function() {

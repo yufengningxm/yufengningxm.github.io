@@ -63,10 +63,10 @@ footer {
     justify-content: center; 
     align-items: center; 
     width: 100%;
-    line-height: 1.2; 
+    line-height: 1.5; 
 }
 footer p {
-    margin: 2px 0;
+    margin: 0 0;
     width: 100%; /* 确保内容宽度为100% */
     text-align: center; /* 确保文本内容居中 */
 }
