@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>
+        
+          柠不知的博客
+        
+    </title>      
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/a264cafa30.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -12,11 +16,30 @@
     <link rel="shortcut icon" href="/image/avatar.png" type="image/x-icon">
     <link rel="icon" href="/image/avatar.png" type="image/png">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+SC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
 <meta name="generator" content="Hexo 7.3.0"><link rel="stylesheet" href="/css/prism-ghcolors.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head> 
 
 <body>
-    <div id="main" class="container-fluid d-flex flex-column min-vh-100">
+    <!-- 导航 -->
+<nav class="nav">
+    <div class="nav-container">
+      <ul class="nav-list">     
+        <li><a href="/" style="color: inherit; text-decoration: none;"><i class="bi bi-house-heart"></i> 首页</a></li>       
+        <li><a href="/archives" style="color: inherit; text-decoration: none;"><i class="bi bi-calendar2-heart"></i> 归档</a></li>      
+        <li><a href="/categories" style="color: inherit; text-decoration: none;"><i class="bi bi-box2-heart"></i> 分类</a></li>     
+        <li><a href="/tags" style="color: inherit; text-decoration: none;"><i class="fa fa-tags"></i> 标签</a></li>      
+      </ul>
+      <form action="/search/index.html" method="get" class="search-form">
+        <input type="text" name="q" placeholder=" " class="search-input">
+        <button type="submit" class="search-button"><i class="bi bi-search-heart"></i></button>
+      </form>
+    </div>
+  </nav>
+  
+    <div id="main" class="container-fluid d-flex flex-column min-vh-100">    
         <div class="row flex-grow-1">
             <!-- 侧边栏 -->
             <aside class="col-md-2 bg-light">
@@ -31,28 +54,28 @@
   <!-- 作者信息 -->
   <div class="author-info">
     <a href="/about" style="color: inherit; text-decoration: none;">
-      <p>柠不知</p>
+      <p>柠不知✨</p>
+      <p class="social-links">
+        <a target="_blank" rel="noopener" href="https://space.bilibili.com/13511395" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-bilibili"></i></a> 
+        <a target="_blank" rel="noopener" href="https://www.xiaohongshu.com/user/profile/605363560000000001008a6c" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-book"></i></a>
+        <a target="_blank" rel="noopener" href="https://www.douyin.com/user/MS4wLjABAAAAbBlZsgwy10ENa2UzGHzrxPFRd3n0fqpyafcbFFZQqHysBz4S2qjX2p71ce1xgpN5" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-tiktok"></i></a>
+        <a target="_blank" rel="noopener" href="https://weibo.com/5248317170" style="color: inherit; text-decoration: none;"><i class="bi bi-sina-weibo"></i></a> 
+        <a target="_blank" rel="noopener" href="https://github.com/yufengningxm" style="color: inherit; text-decoration: none;"><i class="bi bi-github"></i></a> 
+        <a href="mailto:2460992423@qq.com" style="color: inherit; text-decoration: none;"><i class="bi bi-envelope-heart"></i></a> 
+      </p>  
+      <p>梦想成为技术宅</p>
     </a>
   </div>
-
-  <!-- 导航 -->
-    <!-- 导航 -->
-  <nav class="sidebar-nav">
-    <h3>导航</h3>
-    <ul>     
-        <li><a href="/" style="color: inherit; text-decoration: none;">首页</a></li>     
-        <li><a href="/about" style="color: inherit; text-decoration: none;">关于</a></li>      
-        <li><a href="/archives" style="color: inherit; text-decoration: none;">归档</a></li>      
-        <li><a href="/categories" style="color: inherit; text-decoration: none;">分类</a></li>     
-        <li><a href="/tags" style="color: inherit; text-decoration: none;">标签</a></li>      
-    </ul>
-  </nav>
 
 
   <!-- 分类 -->
   <div class="sidebar-categories mt-4">
     <h3>分类</h3>
     <ul>
+      
+        <li>
+          <a href="/categories/%E6%95%99%E7%A8%8B/">教程 (1)</a>
+        </li>
       
     </ul>
   </div>
@@ -66,16 +89,76 @@
 
     <div class="pb-4 pt-4 tag-hover">
         <h2 class="tag-hover">
+            <a href="/2024/07/22/%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E6%A1%86/" class="link-dark text-decoration-none">
+                添加搜索框
+            </a>
+        </h2>
+
+        <div class="tag-hover">
+            <small>2024/07/22 21:52</small>
+            <i class="bi bi-box2-heart"></i>
+            
+                <a href="/categories/%E6%95%99%E7%A8%8B/" class="link-dark text-decoration-none">
+                    教程
+                </a>
+            
+            <i class="bi bi-tag"></i><small>
+            
+                <a href="/tags/Hexo/" class="link-dark text-decoration-none">
+                    Hexo
+                </a>
+            
+            </small>
+        </div>
+
+        <div class="p-2 pe-4">
+            <a href="/2024/07/22/%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E6%A1%86/" class="btn btn-outline-secondary btn-sm float-end">
+                阅读全文 <i class="fa fa-angle-double-right"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="pb-4 pt-4 tag-hover">
+        <h2 class="tag-hover">
+            <a href="/2024/07/19/Cherry%E9%94%AE%E7%9B%98%E9%A9%AF%E6%9C%8D%E8%AE%B0/" class="link-dark text-decoration-none">
+                Cherry键盘驯服记（Mac篇）
+            </a>
+        </h2>
+
+        <div class="tag-hover">
+            <small>2024/07/19 17:04</small>
+            <i class="bi bi-box2-heart"></i>
+            
+            <i class="bi bi-tag"></i><small>
+            
+                <a href="/tags/%E7%94%B5%E8%84%91%E8%AE%BE%E5%A4%87/" class="link-dark text-decoration-none">
+                    电脑设备
+                </a>
+            
+            </small>
+        </div>
+
+        <div class="p-2 pe-4">
+            <a href="/2024/07/19/Cherry%E9%94%AE%E7%9B%98%E9%A9%AF%E6%9C%8D%E8%AE%B0/" class="btn btn-outline-secondary btn-sm float-end">
+                阅读全文 <i class="fa fa-angle-double-right"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="pb-4 pt-4 tag-hover">
+        <h2 class="tag-hover">
             <a href="/2024/07/16/test1/" class="link-dark text-decoration-none">
                 test1
             </a>
         </h2>
 
         <div class="tag-hover">
-            <i class="bi bi-calendar-heart"></i> <small>2024/07/16 11:05</small>
+            <small>2024/07/16 11:05</small>
             <i class="bi bi-box2-heart"></i>
             
-            <i class="bi bi-bookmark-heart"></i></i> <small>
+            <i class="bi bi-tag"></i><small>
             
             </small>
         </div>
@@ -90,16 +173,40 @@
 
     <div class="pb-4 pt-4 tag-hover">
         <h2 class="tag-hover">
+            <a href="/2024/06/06/test/" class="link-dark text-decoration-none">
+                搭建个人网站
+            </a>
+        </h2>
+
+        <div class="tag-hover">
+            <small>2024/06/06 17:47</small>
+            <i class="bi bi-box2-heart"></i>
+            
+            <i class="bi bi-tag"></i><small>
+            
+            </small>
+        </div>
+
+        <div class="p-2 pe-4">
+            <a href="/2024/06/06/test/" class="btn btn-outline-secondary btn-sm float-end">
+                阅读全文 <i class="fa fa-angle-double-right"></i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="pb-4 pt-4 tag-hover">
+        <h2 class="tag-hover">
             <a href="/2024/06/06/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" class="link-dark text-decoration-none">
                 555
             </a>
         </h2>
 
         <div class="tag-hover">
-            <i class="bi bi-calendar-heart"></i> <small>2024/06/06 17:47</small>
+            <small>2024/06/06 17:47</small>
             <i class="bi bi-box2-heart"></i>
             
-            <i class="bi bi-bookmark-heart"></i></i> <small>
+            <i class="bi bi-tag"></i><small>
             
                 <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="link-dark text-decoration-none">
                     个人博客搭建
@@ -118,40 +225,16 @@
 
     <div class="pb-4 pt-4 tag-hover">
         <h2 class="tag-hover">
-            <a href="/2024/06/06/test/" class="link-dark text-decoration-none">
-                搭建个人网站
-            </a>
-        </h2>
-
-        <div class="tag-hover">
-            <i class="bi bi-calendar-heart"></i> <small>2024/06/06 17:47</small>
-            <i class="bi bi-box2-heart"></i>
-            
-            <i class="bi bi-bookmark-heart"></i></i> <small>
-            
-            </small>
-        </div>
-
-        <div class="p-2 pe-4">
-            <a href="/2024/06/06/test/" class="btn btn-outline-secondary btn-sm float-end">
-                阅读全文 <i class="fa fa-angle-double-right"></i>
-            </a>
-        </div>
-
-    </div>
-
-    <div class="pb-4 pt-4 tag-hover">
-        <h2 class="tag-hover">
             <a href="/2023/06/06/My-New-Blog-Post/" class="link-dark text-decoration-none">
                 test 11
             </a>
         </h2>
 
         <div class="tag-hover">
-            <i class="bi bi-calendar-heart"></i> <small>2023/06/06 17:47</small>
+            <small>2023/06/06 17:47</small>
             <i class="bi bi-box2-heart"></i>
             
-            <i class="bi bi-bookmark-heart"></i></i> <small>
+            <i class="bi bi-tag"></i><small>
             
                 <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="link-dark text-decoration-none">
                     个人博客搭建
@@ -178,25 +261,18 @@
 
             </div>
         </div>
-    </div>
 
-    <!-- 页脚 -->
-    <footer class="mt-auto bg-light py-3">
-        <footer class="footer">
+        <!-- 页脚 -->
+        <footer class="mt-auto bg-light py-3">
+            <footer class="footer">
     <div class="container">
-        <p>&copy; 2024 柠不知 <i class="bi bi-balloon-heart"></i></p>
-        <p>
-            <i class="bi bi-graph-up"></i> 1530 字｜
-            <i class="bi bi-clock-history"></i> <span id="uptime">网站运行时间：正在计算...</span>｜
-            <i class="bi bi-people"></i> <span id="busuanzi_value_site_uv"></span> 人｜ <i class="bi bi-search-heart"></i> <span id="busuanzi_value_site_pv"></span> 次
+        <p>&copy; 2024 </i>
         </p>
         <p>
-            <a target="_blank" rel="noopener" href="https://space.bilibili.com/13511395" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-bilibili"></i></a>｜
-            <a target="_blank" rel="noopener" href="https://www.xiaohongshu.com/user/profile/605363560000000001008a6c" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-book"></i></a>｜
-            <a target="_blank" rel="noopener" href="https://www.douyin.com/user/MS4wLjABAAAAbBlZsgwy10ENa2UzGHzrxPFRd3n0fqpyafcbFFZQqHysBz4S2qjX2p71ce1xgpN5" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-tiktok"></i></a>｜
-            <a target="_blank" rel="noopener" href="https://weibo.com/5248317170" style="color: inherit; text-decoration: none;"><i class="bi bi-sina-weibo"></i></a>｜
-            <a target="_blank" rel="noopener" href="https://github.com/yufengningxm" style="color: inherit; text-decoration: none;"><i class="bi bi-github"></i></a>｜
-        </p>       
+            <i class="bi bi-graph-up"></i> 1800 字｜
+            <i class="bi bi-clock-history"></i> <span id="uptime">网站运行时间：正在计算...</span>｜
+            <i class="bi bi-people"></i> <span id="busuanzi_value_site_uv"></span> 人｜ <i class="bi bi-search-heart"></i> <span id="busuanzi_value_site_pv"></span> 次
+        </p>     
     </div>
 </footer>
 
@@ -217,8 +293,11 @@
     document.addEventListener("DOMContentLoaded", function() {
         calculateUptime();
     });
-</script> 
-    </footer>
+</script>
+        </footer>
+    </div>
+
+    
 
 
     <script id="__bs_script__">//<![CDATA[

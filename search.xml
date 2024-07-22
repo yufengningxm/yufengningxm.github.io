@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>添加搜索框</title>
+      <link href="/2024/07/22/%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E6%A1%86/"/>
+      <url>/2024/07/22/%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E6%A1%86/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Cherry键盘驯服记（Mac篇）</title>
+      <link href="/2024/07/19/Cherry%E9%94%AE%E7%9B%98%E9%A9%AF%E6%9C%8D%E8%AE%B0/"/>
+      <url>/2024/07/19/Cherry%E9%94%AE%E7%9B%98%E9%A9%AF%E6%9C%8D%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>一直以来都很喜欢机械轴，且本人金刚指，喜欢按压力度大且有触感反馈的的轴体，选择了Cherry的青轴，完美适配需求。奈何不适配MacOS系统，此篇博文记录这个驯服过程。</p><h3 id="command键"><a href="#command键" class="headerlink" title="command键"></a>command键</h3>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 电脑设备 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>test1</title>
+      <link href="/2024/07/16/test1/"/>
+      <url>/2024/07/16/test1/</url>
+      
+        <content type="html"><![CDATA[<p>hjhjh</p><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Greeter</span><span class="token punctuation">:</span>    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">:</span>        self<span class="token punctuation">.</span>name <span class="token operator">=</span> name    <span class="token keyword">def</span> <span class="token function">greet</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>        <span class="token keyword">print</span><span class="token punctuation">(</span>f"Hello<span class="token punctuation">,</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>     self<span class="token punctuation">.</span>name<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;!")</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-bash"><code class="language-bash"><span class="token operator">&lt;</span>nav<span class="token operator">></span>    <span class="token operator">&lt;</span>ul class<span class="token operator">=</span><span class="token string">"pagination"</span><span class="token operator">></span>      <span class="token operator">&lt;</span>% <span class="token keyword">if</span> <span class="token punctuation">(</span>page.prev<span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123; %></span>        <span class="token operator">&lt;</span>li class<span class="token operator">=</span><span class="token string">"page-item"</span><span class="token operator">></span>          <span class="token operator">&lt;</span>a class<span class="token operator">=</span><span class="token string">"page-link"</span> href<span class="token operator">=</span><span class="token string">"&lt;%= url_for(page.prev) %>"</span><span class="token operator">></span>Previous<span class="token operator">&lt;</span>/a<span class="token operator">></span>        <span class="token operator">&lt;</span>/li<span class="token operator">></span>      <span class="token operator">&lt;</span>% <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125; %></span>      <span class="token operator">&lt;</span>% <span class="token keyword">if</span> <span class="token punctuation">(</span>page.next<span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123; %></span>        <span class="token operator">&lt;</span>li class<span class="token operator">=</span><span class="token string">"page-item"</span><span class="token operator">></span>          <span class="token operator">&lt;</span>a class<span class="token operator">=</span><span class="token string">"page-link"</span> href<span class="token operator">=</span><span class="token string">"&lt;%= url_for(page.next) %>"</span><span class="token operator">></span>Next<span class="token operator">&lt;</span>/a<span class="token operator">></span>        <span class="token operator">&lt;</span>/li<span class="token operator">></span>      <span class="token operator">&lt;</span>% <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125; %></span>    <span class="token operator">&lt;</span>/ul<span class="token operator">></span>  <span class="token operator">&lt;</span>/nav<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建个人网站</title>
+      <link href="/2024/06/06/test/"/>
+      <url>/2024/06/06/test/</url>
+      
+        <content type="html"><![CDATA[<h1 id="配置博客的环境"><a href="#配置博客的环境" class="headerlink" title="配置博客的环境"></a>配置博客的环境</h1><h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>Node.js是JavaScript语言运行环境，用于开发服务器端和网络应用程序。<br>npm (node package manager)是 JavaScript 世界的包管理工具,并且是 Node.js 平台的默认包管理工具。</p><p>是粉丝尬说过话啊粉丝给我<br>把皇家海军护航脚后跟</p><p>啊个和别人好、<br>啊发广告我给我</p><p>阿达发个都很迷糊</p><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello, World!"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="uihuihui"><a href="#uihuihui" class="headerlink" title="uihuihui"></a>uihuihui</h2><h3 id="uiuhuhhu"><a href="#uiuhuhhu" class="headerlink" title="uiuhuhhu"></a>uiuhuhhu</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>555</title>
+      <link href="/2024/06/06/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/"/>
+      <url>/2024/06/06/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</url>
+      
+        <content type="html"><![CDATA[<p>萨芬高期望</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 个人博客搭建 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>test 11</title>
+      <link href="/2023/06/06/My-New-Blog-Post/"/>
+      <url>/2023/06/06/My-New-Blog-Post/</url>
+      
+        <content type="html"><![CDATA[<p>你好呀<br>这是测试<br>hjhjh</p><pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello, world!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">greet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello, World!"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 个人博客搭建 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
