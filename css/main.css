@@ -118,7 +118,30 @@ pre, code, a {
 /* ------------主内容区域------------ */
 #content {
     padding: 15px;
-    box-sizing: border-box; /* 确保内边距包含在元素宽度和高度中 */
+    box-sizing: border-box; 
+}
+/* 代码复制 */
+.code-toolbar {
+  position: relative;
+}
+.code-toolbar .copy-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #ccc;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.code-toolbar .copy-button:focus {
+  outline: none;
+}
+.code-toolbar .copy-button.copied {
+  background: #4caf50;
+  color: #fff;
 }
 
 /* ------------页脚样式------------ */
