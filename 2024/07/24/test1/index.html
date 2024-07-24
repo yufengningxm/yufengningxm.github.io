@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>
         
-          柠不知的博客-test1
+          柠不知的博客-My Post
         
     </title>      
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +15,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/image/avatar.png" type="image/x-icon">
     <link rel="icon" href="/image/avatar.png" type="image/png">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <!-- 代码块复制功能 -->
+<!-- 代码块复制功能 --> 
+<script type= "text/javascript" src= "/js/clipboard.min.js" ></script> 
+<script type="text/ javascript " src=" /js/clipboard-use.js "></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+SC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-<meta name="generator" content="Hexo 7.3.0"><link rel="stylesheet" href="/css/prism-ghcolors.css" type="text/css">
+<meta name="generator" content="Hexo 7.3.0"><link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head> 
 
 <body>
@@ -63,7 +69,7 @@
         <a target="_blank" rel="noopener" href="https://github.com/yufengningxm" style="color: inherit; text-decoration: none;"><i class="bi bi-github"></i></a> 
         <a href="mailto:2460992423@qq.com" style="color: inherit; text-decoration: none;"><i class="bi bi-envelope-heart"></i></a> 
       </p>  
-      <p>梦想成为技术宅</p>
+      <p></p>
     </a>
   </div>
 
@@ -85,62 +91,26 @@
 
             <!-- 引入正文 -->
             <div id="content" class="col-md-10">
-                <head>
-    <!-- Other head content -->
-    <link rel="stylesheet" href="/css/mac-code.css">
-</head>
-<body>
-    <h2>test1</h2>
-    
-        <p>2024/07/16 11:05:45</p>
-    
-
-    <p>hjhjh</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Greeter</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        self<span class="token punctuation">.</span>name <span class="token operator">=</span> name
-
-    <span class="token keyword">def</span> <span class="token function">greet</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token keyword">print</span><span class="token punctuation">(</span>f"Hello<span class="token punctuation">,</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;</span>
-     self<span class="token punctuation">.</span>name<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125;!")</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token operator">&lt;</span>nav<span class="token operator">></span>
-    <span class="token operator">&lt;</span>ul class<span class="token operator">=</span><span class="token string">"pagination"</span><span class="token operator">></span>
-      <span class="token operator">&lt;</span>% <span class="token keyword">if</span> <span class="token punctuation">(</span>page.prev<span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123; %></span>
-        <span class="token operator">&lt;</span>li class<span class="token operator">=</span><span class="token string">"page-item"</span><span class="token operator">></span>
-          <span class="token operator">&lt;</span>a class<span class="token operator">=</span><span class="token string">"page-link"</span> href<span class="token operator">=</span><span class="token string">"&lt;%= url_for(page.prev) %>"</span><span class="token operator">></span>Previous<span class="token operator">&lt;</span>/a<span class="token operator">></span>
-        <span class="token operator">&lt;</span>/li<span class="token operator">></span>
-      <span class="token operator">&lt;</span>% <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125; %></span>
-      <span class="token operator">&lt;</span>% <span class="token keyword">if</span> <span class="token punctuation">(</span>page.next<span class="token punctuation">)</span> <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123; %></span>
-        <span class="token operator">&lt;</span>li class<span class="token operator">=</span><span class="token string">"page-item"</span><span class="token operator">></span>
-          <span class="token operator">&lt;</span>a class<span class="token operator">=</span><span class="token string">"page-link"</span> href<span class="token operator">=</span><span class="token string">"&lt;%= url_for(page.next) %>"</span><span class="token operator">></span>Next<span class="token operator">&lt;</span>/a<span class="token operator">></span>
-        <span class="token operator">&lt;</span>/li<span class="token operator">></span>
-      <span class="token operator">&lt;</span>% <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#125; %></span>
-    <span class="token operator">&lt;</span>/ul<span class="token operator">></span>
-  <span class="token operator">&lt;</span>/nav<span class="token operator">></span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h2>My Post</h2>
 
 
-    <div class="p-2 pe-4">
-        
-            <a href="/2024/07/19/Cherry%E9%94%AE%E7%9B%98%E9%A9%AF%E6%9C%8D%E8%AE%B0/" class="btn btn-outline-secondary btn-sm float-start">
-                <small>
-                    < 上一篇：Cherry键盘驯服记（Mac篇）
-                </small>
-            </a>
-        
+    <p>2024/07/24 00:00:00 </p>
+  
 
-        
-            <a href="/2024/06/06/test/" class="btn btn-outline-secondary btn-sm float-end">
-                <small>
-                    下一篇：搭建个人网站 >
-                </small>
-            </a>
-        
-    </div>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">// 向屏幕输出文本:</span></span><br><span class="line">        System.out.println(<span class="string">&quot;Hello, world!&quot;</span>);</span><br><span class="line">        <span class="comment">/* 多行注释开始</span></span><br><span class="line"><span class="comment">        注释内容</span></span><br><span class="line"><span class="comment">        注释结束 */</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 
 
-    <script src="/js/code.js"></script>
-</body>
+
+<div class="p-2 pe-4">
+     
+
+     
+        <a href="/2024/07/23/Hexo%E6%A0%B7%E5%BC%8F%E7%AE%A1%E7%90%86/" class="btn btn-outline-secondary btn-sm float-end">
+            <small>
+                 下一篇：Hexo样式管理 >
+            </small>
+        </a>
+     
+</div>
 
             </div>
         </div>
@@ -152,7 +122,7 @@
         <p>&copy; 2024 柠不知✨</i>
         </p>
         <p>
-            <i class="bi bi-graph-up"></i> 1800 字｜
+            <i class="bi bi-graph-up"></i> 4151 字｜
             <i class="bi bi-clock-history"></i> <span id="uptime">网站运行时间：正在计算...</span>｜
             <i class="bi bi-people"></i> <span id="busuanzi_value_site_uv"></span> 人｜ <i class="bi bi-search-heart"></i> <span id="busuanzi_value_site_pv"></span> 次
         </p>     

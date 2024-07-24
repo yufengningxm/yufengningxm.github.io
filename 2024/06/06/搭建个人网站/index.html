@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>
         
-          柠不知的博客-555
+          柠不知的博客-搭建个人网站
         
     </title>      
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,11 +15,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/image/avatar.png" type="image/x-icon">
     <link rel="icon" href="/image/avatar.png" type="image/png">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <!-- 代码块复制功能 -->
+<!-- 代码块复制功能 --> 
+<script type= "text/javascript" src= "/js/clipboard.min.js" ></script> 
+<script type="text/ javascript " src=" /js/clipboard-use.js "></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+SC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-<meta name="generator" content="Hexo 7.3.0"><link rel="stylesheet" href="/css/prism-ghcolors.css" type="text/css">
+<meta name="generator" content="Hexo 7.3.0"><link rel="stylesheet" href="/css/prism.css" type="text/css">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head> 
 
 <body>
@@ -63,7 +69,7 @@
         <a target="_blank" rel="noopener" href="https://github.com/yufengningxm" style="color: inherit; text-decoration: none;"><i class="bi bi-github"></i></a> 
         <a href="mailto:2460992423@qq.com" style="color: inherit; text-decoration: none;"><i class="bi bi-envelope-heart"></i></a> 
       </p>  
-      <p>梦想成为技术宅</p>
+      <p></p>
     </a>
   </div>
 
@@ -85,39 +91,61 @@
 
             <!-- 引入正文 -->
             <div id="content" class="col-md-10">
-                <head>
-    <!-- Other head content -->
-    <link rel="stylesheet" href="/css/mac-code.css">
-</head>
-<body>
-    <h2>555</h2>
-    
-        <p>2024/06/06 17:47:57</p>
-    
-
-    <p>萨芬高期望</p>
+                <h2>搭建个人网站</h2>
 
 
-    <div class="p-2 pe-4">
-        
-            <a href="/2024/06/06/test/" class="btn btn-outline-secondary btn-sm float-start">
-                <small>
-                    < 上一篇：搭建个人网站
-                </small>
-            </a>
-        
+    <p>2024/06/06 17:47:57 </p>
+  
 
-        
-            <a href="/2023/06/06/My-New-Blog-Post/" class="btn btn-outline-secondary btn-sm float-end">
-                <small>
-                    下一篇：test 11 >
-                </small>
-            </a>
-        
-    </div>
+<h1 id="配置博客的环境"><a href="#配置博客的环境" class="headerlink" title="配置博客的环境"></a>配置博客的环境</h1><h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><p>Node.js是JavaScript语言运行环境，用于开发服务器端和网络应用程序。<br>npm (node package manager)是 JavaScript 世界的包管理工具,并且是 Node.js 平台的默认包管理工具。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>官网下载：nodejs.org<br>方法1: 复制代码到终端<br><img src="https://p.ipic.vip/039x2p.png" alt=" Download Node.js"><br>方法2: 直接下载安装包，一直点下一步<br><img src="https://p.ipic.vip/mymmlk.png" alt=" Download Node.js"></p>
+<ol>
+<li>选择对应的版本号。其中，Current是最新开发版本，包含最新的功能、改进和实验性特性，但不太稳定。而LTS版（Long-Term Support，长期支持版）提供稳定且可靠的版本，适合生产环境中的应用程序，建议选择LTS版。</li>
+<li>选择自己的电脑系统（Windows、macOS、Linux）<br>安装成功后查看node和npm版本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>Hexo是基于Node.js的静态博客框架Hexo。</p>
+<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>终端切换到超级用户模式<br>sudo su<br>(输入密码)</p>
+<h2 id="创建博客目录并初始化"><a href="#创建博客目录并初始化" class="headerlink" title="创建博客目录并初始化"></a>创建博客目录并初始化</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>blog文件夹下生成<br><img src="https://p.ipic.vip/1nsoju.png" alt="blog文件夹"><br>终端显示<br>sh-3.2# npm install hexo-cli -g<br>changed 53 packages in 7s<br>14 packages are looking for funding<br>  run <code>npm fund</code> for details<br>sh-3.2# hexo init blog<br>INFO  Cloning hexo-starter <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-starter.git">https://github.com/hexojs/hexo-starter.git</a><br>INFO  Install dependencies<br>INFO  Start blogging with Hexo!<br>sh-3.2# cd blog<br>sh-3.2# npm install<br>hexo server</p>
+<p>added 2 packages, and audited 228 packages in 724ms</p>
+<p>23 packages are looking for funding<br>  run <code>npm fund</code> for details</p>
+<p>found 0 vulnerabilities<br>sh-3.2# hexo server<br>INFO  Validating config<br>INFO  Start processing<br>INFO  Hexo is running at <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> . Press Ctrl+C to stop.</p>
+<p>在网页输入<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 进入到博客初始页面<br><img src="https://p.ipic.vip/w7y1oz.png" alt="hexo初始页"><br>control+c退出界面</p>
+<p>到这里，算成功创建了个人网站，接下来是网站部署到GitHub，以及打造专属域名的教程。</p>
+<h1 id="GitHub部署"><a href="#GitHub部署" class="headerlink" title="GitHub部署"></a>GitHub部署</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g <span class="comment">#生成静态文件</span></span><br><span class="line">hexo s本地预览</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="配置SSH-keys，部署到GitHub-Pages"><a href="#配置SSH-keys，部署到GitHub-Pages" class="headerlink" title="配置SSH keys，部署到GitHub Pages"></a>配置SSH keys，部署到GitHub Pages</h2><p>设置_config.yml中的deploy选项</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&lt;your-github-repo&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">gh-pages</span></span><br></pre></td></tr></table></figure>
+<p>安装部署插件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>部署到GitHub Pages<br>hexo deploy</p>
+<h1 id="主题更换"><a href="#主题更换" class="headerlink" title="主题更换"></a>主题更换</h1><p>下载主题到themes文件夹：<br>git clone <theme-repo> themes&#x2F;<theme-name><br>修改_config.yml中的theme值为新主题名。<br>发表文章：<br>hexo new “My New Post”<br>编辑器会自动打开，您可以根据提示填写相关信息。<br>更新文章并重新生成和部署：<br>hexo generate<br>hexo deploy</p>
+<h1 id="一些报错"><a href="#一些报错" class="headerlink" title="一些报错"></a>一些报错</h1><h2 id="端口占用"><a href="#端口占用" class="headerlink" title="端口占用"></a>端口占用</h2><p>sh-3.2# hexo s<br>INFO  Validating config<br>FATAL Port 4000 has been used. Try other port instead.<br>FATAL Something’s wrong. Maybe you can find the solution here: <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a><br>解决办法</p>
+<ol>
+<li>结束端口占用进程<br>netstat -aon|findstr 4000</li>
+<li>更改hexo s运行的端口号。在_config.yml内添加下列代码<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">8888</span></span><br><span class="line">  <span class="attr">compress:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">header:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+<li>Hexo运行时换个端口<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s -p 5000</span><br></pre></td></tr></table></figure>
+每次运行都要换，有点麻烦<br>根据这篇文章：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_62882080/article/details/129797273">https://blog.csdn.net/weixin_62882080/article/details/129797273</a></li>
+</ol>
+ 
 
-    <script src="/js/code.js"></script>
-</body>
+
+<div class="p-2 pe-4">
+     
+        <a href="/2024/06/06/test/" class="btn btn-outline-secondary btn-sm float-start">
+            <small>
+                < 上一篇：搭建个人网站
+            </small>
+        </a>
+     
+
+     
+        <a href="/2023/06/06/My-New-Blog-Post/" class="btn btn-outline-secondary btn-sm float-end">
+            <small>
+                 下一篇：test 11 >
+            </small>
+        </a>
+     
+</div>
 
             </div>
         </div>
@@ -129,7 +157,7 @@
         <p>&copy; 2024 柠不知✨</i>
         </p>
         <p>
-            <i class="bi bi-graph-up"></i> 1800 字｜
+            <i class="bi bi-graph-up"></i> 4151 字｜
             <i class="bi bi-clock-history"></i> <span id="uptime">网站运行时间：正在计算...</span>｜
             <i class="bi bi-people"></i> <span id="busuanzi_value_site_uv"></span> 人｜ <i class="bi bi-search-heart"></i> <span id="busuanzi_value_site_pv"></span> 次
         </p>     
