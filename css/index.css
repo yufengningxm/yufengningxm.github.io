@@ -91,6 +91,26 @@ footer p {
 .social-links a {
   margin: 0 2px;
 }
+#top {
+  width: 30px;
+  height: 50px;
+  background: rgba(85,85,85,0.3) none repeat scroll 0% 0%;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  text-align: center;
+  cursor: pointer;
+}
+#top a {
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  text-decoration: none;
+}
+#top a:hover {
+  background-color: #258fb8;
+}
 .timeline {
   list-style-type: none;
   padding: 0;
@@ -140,6 +160,45 @@ footer p {
 #content {
   padding: 15px;
   box-sizing: border-box;
+}
+.mac-window {
+  position: relative;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.mac-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+.mac-button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.mac-button.close {
+  background-color: #ff5f56; /* Red */
+}
+.mac-button.minimize {
+  background-color: #ffbd2e; /* Yellow */
+}
+.mac-button.maximize {
+  background-color: #27c93f; /* Green */
+}
+.code-container {
+  padding: 10px;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: auto;
 }
 .highlight {
   position: relative;
